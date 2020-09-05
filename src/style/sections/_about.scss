@@ -1,12 +1,18 @@
-
-body{
-  padding:0;
-  margin:0;
+html,body {
+    margin:0px;
+    padding:0px;
 }
+
+html,body {
+  overflow-x: hidden !important;
+}
+
+
 nav.navMenu{
   position: absolute;
   top: 0;
   left: 0;
+  right:0;
   width: 100%;
 }
 
@@ -17,13 +23,14 @@ nav.navMenu{
 
 /* Style the links inside the navigation bar */
 .topnav a {
+margin-top:25px;
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -31,8 +38,6 @@ nav.navMenu{
   background-color: #ddd;
   color: black;
 }
-
-
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
@@ -48,9 +53,17 @@ nav.navMenu{
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 1102px) {
   .linkss{
   display:none;
+  }
+}
+
+@media screen and (max-width: 904px) {
+  .topnav a {
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 18px;
   }
 }
 
@@ -69,27 +82,63 @@ nav.navMenu{
   font-size: 12px;
   }
 }
-@media screen and (max-width: 492px) {
+
+@media screen and (max-width: 619px) {
   .topnav a {
   padding: 5px 5px;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
+  }
+}
+
+
+@media screen and (max-width: 489px) {
+  .topnav a {
+  padding: 5px 5px;
+  text-decoration: none;
+  font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .topnav a {
+  padding-left:0px;
+  padding: 2px 2px;
+  text-decoration: none;
+  font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .topnav a {
+  padding-left:0px;
+  padding: 2.5px 2.5px;
+  text-decoration: none;
+  font-size: 10.5px;
   }
 }
 
 @media screen and (max-width: 386px) {
   .topnav a {
-  padding: 3px 3px;
+  padding: 2px 2px;
   text-decoration: none;
-  font-size: 7px;
+  font-size: 9.5px;
   }
 }
 
-@media screen and (max-width: 60px) {
+@media screen and (max-width: 340px) {
   .topnav a {
-  padding: 3px 3px;
+  padding: 2px 2px;
   text-decoration: none;
-  font-size: 3px;
+  font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 308px) {
+  .topnav a {
+  padding: 2px 2px;
+  text-decoration: none;
+  font-size: 7px;
   }
 }
 
